@@ -44,11 +44,26 @@ Open RViz and add:
 ## Project Structure
 ```
 autonomous_explorer/
-├── src/           # C++ source files
-├── include/       # Header files  
-├── launch/        # Launch configurations
-├── worlds/        # Gazebo world files
-└── urdf/          # Robot description
+├── package.xml
+├── CMakeLists.txt
+├── src/
+│   ├── explorer_node.cpp
+│   ├── slam_processor.cpp
+│   └── navigation_controller.cpp
+├── include/
+│   └── autonomous_explorer/
+│       ├── explorer_node.hpp
+│       ├── slam_processor.hpp
+│       └── navigation_controller.hpp
+├── launch/
+│   ├── gazebo_world.launch.py
+│   ├── slam_launch.py
+│   └── explorer_launch.py
+├── worlds/
+│   └── maze_world.world
+├── urdf/
+│   └── explorer_robot.urdf
+└── README.md
 ```
 
 ## Learning Goals
