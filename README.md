@@ -7,6 +7,8 @@ A simple autonomous robot that explores unknown environments using SLAM in ROS2 
 - **Real-time SLAM** - Builds occupancy grid maps while exploring
 - **Simple & Educational** - Clean C++17 code for learning robotics
 
+📁 Package Structure
+
 ## Quick Start
 
 ```bash
