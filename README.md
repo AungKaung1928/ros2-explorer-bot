@@ -8,6 +8,17 @@ A simple autonomous robot that explores unknown environments using SLAM in ROS2 
 - **Simple & Educational** - Clean C++17 code for learning robotics
 
 📁 Package Structure
+```
+simple_navigation_project/
+├── simple_navigation_project/
+│   ├── __init__.py
+│   └── obstacle_avoider.py      # Main navigation node
+├── launch/
+│   └── simple_navigation.launch.py  # Complete system launcher
+├── setup.py                     # Python package configuration
+├── package.xml                  # ROS2 package metadata
+└── resource/                    # Package resources
+```
 
 ## Quick Start
 
