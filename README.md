@@ -7,31 +7,6 @@ A simple autonomous robot that explores unknown environments using SLAM in ROS2 
 - **Real-time SLAM** - Builds occupancy grid maps while exploring
 - **Simple & Educational** - Clean C++17 code for learning robotics
 
-📁 Package Structure
-```
-autonomous_explorer/
-├── package.xml
-├── CMakeLists.txt
-├── src/
-│   ├── explorer_node.cpp
-│   ├── slam_processor.cpp
-│   └── navigation_controller.cpp
-├── include/
-│   └── autonomous_explorer/
-│       ├── explorer_node.hpp
-│       ├── slam_processor.hpp
-│       └── navigation_controller.hpp
-├── launch/
-│   ├── gazebo_world.launch.py
-│   ├── slam_launch.py
-│   └── explorer_launch.py
-├── worlds/
-│   └── maze_world.world
-├── urdf/
-│   └── explorer_robot.urdf
-└── README.md
-```
-
 ## Quick Start
 
 ```bash
