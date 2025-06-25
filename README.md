@@ -9,15 +9,27 @@ A simple autonomous robot that explores unknown environments using SLAM in ROS2 
 
 📁 Package Structure
 ```
-simple_navigation_project/
-├── simple_navigation_project/
-│   ├── __init__.py
-│   └── obstacle_avoider.py      # Main navigation node
+autonomous_explorer/
+├── package.xml
+├── CMakeLists.txt
+├── src/
+│   ├── explorer_node.cpp
+│   ├── slam_processor.cpp
+│   └── navigation_controller.cpp
+├── include/
+│   └── autonomous_explorer/
+│       ├── explorer_node.hpp
+│       ├── slam_processor.hpp
+│       └── navigation_controller.hpp
 ├── launch/
-│   └── simple_navigation.launch.py  # Complete system launcher
-├── setup.py                     # Python package configuration
-├── package.xml                  # ROS2 package metadata
-└── resource/                    # Package resources
+│   ├── gazebo_world.launch.py
+│   ├── slam_launch.py
+│   └── explorer_launch.py
+├── worlds/
+│   └── maze_world.world
+├── urdf/
+│   └── explorer_robot.urdf
+└── README.md
 ```
 
 ## Quick Start
