@@ -63,6 +63,12 @@ The `explorer_node.cpp` implements an intelligent navigation algorithm:
 
 3. **Run the explorer**:
    ```bash
+   ros2 run autonomous_explorer explorer_node
+   ```
+   (or)
+   
+5. **Launch the file**:
+   ```bash
    ros2 launch autonomous_explorer explorer_launch.py
    ```
 
