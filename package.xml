@@ -2,7 +2,7 @@
 <package format="3">
   <name>autonomous_explorer</name>
   <version>1.0.0</version>
-  <description>Simple autonomous explorer with SLAM</description>
+  <description>Simple autonomous explorer with obstacle avoidance</description>
   <maintainer email="aungkaungmyattt1928@gmail.com">allkg</maintainer>
   <license>MIT</license>
 
@@ -11,9 +11,6 @@
   <depend>rclcpp</depend>
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
-  <depend>nav_msgs</depend>
-  <depend>tf2</depend>
-  <depend>tf2_ros</depend>
   
   <export>
     <build_type>ament_cmake</build_type>
