@@ -61,13 +61,7 @@ The `explorer_node.cpp` implements an intelligent navigation algorithm:
    ros2 launch turtlebot3_gazebo turtlebot3_my_world.launch.py
    ```
 
-3. **Run the explorer**:
-   ```bash
-   ros2 run autonomous_explorer explorer_node
-   ```
-   (or)
-   
-5. **Launch the file**:
+3. **Launch the file**:
    ```bash
    ros2 launch autonomous_explorer explorer_launch.py
    ```
@@ -95,5 +89,3 @@ The project includes setup instructions for creating custom Gazebo environments:
 - Emergency stop capability
 
 ---
-
-*Built with ROS2 for autonomous robot navigation research and development* 🎯
