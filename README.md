@@ -81,7 +81,7 @@ The project includes setup instructions for creating custom Gazebo environments:
 - geometry_msgs
 - sensor_msgs
 
-## Safety Features 🛡️
+## Safety Features 🔒
 
 - Obstacle detection with configurable minimum distances
 - Lane width validation before turning
