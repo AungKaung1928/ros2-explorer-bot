@@ -1,0 +1,26 @@
+explorer:
+  ros__parameters:
+    # Safety parameters
+    min_distance: 0.5           # Stop if obstacle closer than this (meters)
+    min_lane_width: 0.8         # Minimum lane width to enter (meters)
+    
+    # Speed settings
+    normal_speed: 0.3           # Forward speed (m/s)
+    turn_speed: 0.3             # Turning speed (rad/s)
+    
+    # Update rate
+    control_frequency: 10.0     # Hz - how often to publish commands
+    
+    # Scan processing
+    front_scan_start: 340       # Front scan angle start (degrees)
+    front_scan_end: 20          # Front scan angle end (degrees)
+    left_scan_start: 60         # Left scan angle start (degrees)
+    left_scan_end: 120          # Left scan angle end (degrees)
+    right_scan_start: 240       # Right scan angle start (degrees)
+    right_scan_end: 300         # Right scan angle end (degrees)
+    
+    # Extended scanning for lane width
+    left_wide_start: 45
+    left_wide_end: 135
+    right_wide_start: 225
+    right_wide_end: 315

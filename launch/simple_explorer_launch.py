@@ -1,28 +1,23 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    pkg_dir = os.path.dirname(__file__)
+    # Get path to config file
+    config_dir = get_package_share_directory('autonomous_explorer')
+    config_file = os.path.join(config_dir, 'config', 'explorer_params.yaml')
     
     return LaunchDescription([
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(pkg_dir, 'gazebo_world.launch.py'))
-        ),
-        
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                os.path.join(pkg_dir, 'slam_launch.py'))
-        ),
-        
+        # Just the explorer node - launch Gazebo separately
         Node(
             package='autonomous_explorer',
             executable='explorer_node',
             name='explorer',
             output='screen',
-            parameters=[{'use_sim_time': True}]
+            parameters=[
+                config_file,
+                {'use_sim_time': True}
+            ]
         )
     ])

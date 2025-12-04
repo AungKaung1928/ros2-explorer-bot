@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>autonomous_explorer</name>
-  <version>1.0.0</version>
-  <description>Simple autonomous explorer with obstacle avoidance</description>
-  <maintainer email="aungkaungmyattt1928@gmail.com">allkg</maintainer>
+  <version>2.0.0</version>
+  <description>Lifecycle-based autonomous explorer with obstacle avoidance</description>
+  <maintainer email="username@gmail.com">user</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   
   <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>lifecycle_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>sensor_msgs</depend>
   
