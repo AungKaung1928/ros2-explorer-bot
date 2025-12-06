@@ -1,4 +1,4 @@
-# Autonomous Explorer (Lifecycle Edition)
+# Autonomous Explorer (Lifecycle Node Edition)
 
 ROS2-based autonomous robot navigation system with lifecycle node architecture, YAML configuration, and intelligent obstacle avoidance for safe exploration.
 
