@@ -317,3 +317,10 @@ ros2 launch autonomous_explorer simple_explorer_launch.py \
 - lifecycle_msgs
 - geometry_msgs
 - sensor_msgs
+
+## License
+Apache License 2.0 - See [LICENSE](LICENSE) for details.
+
+This project demonstrates production-grade ROS2 obstacle avoidance written in C++.
+Free to use for commercial and educational purposes.
+---
